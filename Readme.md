@@ -1,6 +1,6 @@
 # Introduction to Testing
 
-## Функциональное тестирование сайта [IQ Option](https://iqoption.com/ru)
+## Функциональное тестирование сайта [Invest market](https://www.investmarkets.com/international/ru/trade/)
 
 
 
