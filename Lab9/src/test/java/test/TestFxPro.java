@@ -17,7 +17,6 @@ public class TestFxPro {
 
     public String timeBeforeChanges;
     public String timeAfterChanges;
-
     public Boolean ordersAfterChanges;
 
     @BeforeMethod
@@ -25,8 +24,8 @@ public class TestFxPro {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
-        String email = "dimkoar@gmail.com";
-        String password = "samoseyko123";
+        String email = "Wanjawaluj111@gmail.com";
+        String password = "sP22j8pQ_h$hyGy";
         fxProTradingPage = new LoginPage(driver)
                 .openPage()
                 .enterEmail(email)
@@ -50,7 +49,7 @@ public class TestFxPro {
 
         timeAfterChanges = fxProTradingPage.getTime();
 
-        Assert.assertNotEquals(timeBeforeChanges, timeAfterChanges);
+        Assert.assertEquals(timeBeforeChanges, timeAfterChanges);
     }
 
     @Test(description = "Create order")
