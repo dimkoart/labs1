@@ -49,7 +49,7 @@ public class TestFxPro {
 
         timeAfterChanges = fxProTradingPage.getTime();
 
-        Assert.assertEquals(timeBeforeChanges, timeAfterChanges);
+        Assert.assertNotEquals(timeBeforeChanges, timeAfterChanges);
     }
 
     @Test(description = "Create order")
